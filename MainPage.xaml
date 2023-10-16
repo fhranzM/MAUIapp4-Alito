@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUIApp4.MainPage">
+
+    <ScrollView>
+        <Grid
+            Padding="20"
+            RowSpacing="10"
+            RowDefinitions="Auto, Auto, *"
+            >
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                Grid.Row="0" >
+
+                <Label
+                    VerticalOptions="Center"
+                    Text="Vertical" />
+
+                <Button
+                    x:Name="Start"
+                    Text="Start"
+                    Clicked="OnVerticalStart" />
+
+                <Button
+                    x:Name="Center"
+                    Text="Center"
+                    Clicked="OnVerticalCenter" />
+
+                <Button
+                    x:Name="End"
+                    Text="End"
+                    Clicked="OnVerticalEnd" />
+                
+                
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                Spacing="10"
+                HorizontalOptions="Center"
+                Grid.Row="1" >
+                
+                <Label
+                    VerticalOptions="Center"
+                    Text="Horizontal" />
+
+                <Button
+                    x:Name="str"
+                    Text="Start"
+                    Clicked="OnHorizontalStart" />
+
+                <Button
+                    x:Name="ctr"
+                    Text="Center"
+                    Clicked="OnHorizontalCenter" />
+
+                <Button
+                    x:Name="nd"
+                    Text="End"
+                    Clicked="OnHorizontalEnd" />
+
+            </HorizontalStackLayout>
+
+
+            <Image
+                    Grid.Row="2"
+                    Source="cute_ninja.jpg"
+                    HeightRequest="120"
+                    WidthRequest="120"
+                    x:Name="target"/>
+
+        </Grid>
+        
+        
+    </ScrollView>
+
+</ContentPage>
